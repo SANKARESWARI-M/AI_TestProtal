@@ -1,0 +1,94 @@
+/* Container for the Home page */
+.dashboard-container {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Page Title */
+.dashboard-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Profile icon */
+.profile-icon {
+  float: right;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-top: -3rem;
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Create Quiz Button */
+.dashboard-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.dashboard-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Quiz Cards Container */
+.quiz-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Individual Quiz Card */
+.quiz-card {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quiz-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.quiz-card p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .quiz-card {
+    width: 100%;
+  }
+
+  .profile-icon {
+    float: none;
+    display: block;
+    text-align: right;
+    margin-bottom: 1rem;
+  }
+}
